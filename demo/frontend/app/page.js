@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 
 export default function Home() {
-  const url =  "http://localhost:8000"
+  const url =  "https://demo-backend-service.onrender.com"
 const [data,setdata] = useState({});
 useEffect(()=>{
   axios.get(`${url}/`).then((res)=>{
